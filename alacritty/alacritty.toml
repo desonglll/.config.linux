@@ -1,9 +1,12 @@
 
+[terminal]
+osc52 = "CopyPaste"
+
 [keyboard]
 bindings = [ { key = "V", mods = "Alt", action = "Paste" }, ]
 
 [mouse]
-bindings = [ { mouse = "Right", mods = "Control", action = "Paste" }, ]
+bindings = [ { mouse = "Right", action = "Paste" }, ]
 
 [font]
 normal = { family = "Iosevka Term SS 15", style = "Regular" }
@@ -11,3 +14,19 @@ size = 18
 
 [selection]
 save_to_clipboard = true
+
+[[hints.enabled]]
+command = "xdg-open" # On Linux/BSD
+# command = "open" # On macOS
+# command = { program = "cmd", args = [ "/c", "start", "" ] } # On Windows
+hyperlinks = true
+post_processing = true
+persist = false
+mouse.enabled = true
+binding = { key = "O", mods = "Control|Shift" }
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`\\\\]+"
+
+[[hints.enabled]]
+action = "Paste"
+binding = { key = "C", mods = "Control|Shift" }
+regex = "(?:[/\\w\\.-]+[:\\d+]*)"
