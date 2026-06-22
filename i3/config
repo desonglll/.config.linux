@@ -207,3 +207,4 @@ bar {
 
 exec --no-startup-id fcitx5 -d
 exec --no-startup-id xrdb -merge ~/.Xresources
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
