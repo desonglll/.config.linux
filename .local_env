@@ -2,5 +2,12 @@ export HF_ENDPOINT="https://hf-mirror.com"
 export GOPATH="$HOME/go"
 export GO111MODULE="on"
 export ANTHROPIC_BASE_URL="https://api.siliconflow.cn/"
-export ANTHROPIC_API_KEY=$(pass show api/siliconflow)
+
+get_api_siliconflow(){
+    pass show api/siliconflow
+}
+
+export ANTHROPIC_API_KEY=$(get_api_siliconflow)
 export ANTHROPIC_MODEL="Pro/zai-org/GLM-5.1"
+
+export PATH="$HOME/.bun/bin:$PATH"
