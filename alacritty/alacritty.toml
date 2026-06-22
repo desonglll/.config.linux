@@ -1,0 +1,13 @@
+
+[keyboard]
+bindings = [ { key = "V", mods = "Alt", action = "Paste" }, ]
+
+[mouse]
+bindings = [ { mouse = "Right", mods = "Control", action = "Paste" }, ]
+
+[font]
+normal = { family = "Iosevka Term SS 15", style = "Regular" }
+size = 18
+
+[selection]
+save_to_clipboard = true
