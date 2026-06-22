@@ -14,6 +14,8 @@
 
 (global-set-key (kbd "M-o") #'ace-window)
 
+
+
 (after! consult
   (consult-customize
    consult-ripgrep consult-git-grep consult-grep consult-man

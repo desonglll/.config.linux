@@ -19,6 +19,9 @@
   ;; :recipe (:local-repo "/Volumes/Tuo-APFS/workspace/translate.el/")
   )
 
+(package! pyim)
+(package! pyim-basedict)
+
 ;; (load-file "/Volumes/Tuo-APFS/workspace/translate/translate.el")
 
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
